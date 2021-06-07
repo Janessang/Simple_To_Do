@@ -74,13 +74,13 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 if (alToDo.isEmpty() == true) {
-                                    Toast.makeText(MainActivity.this,"You don't have any task to remove" , Toast.LENGTH_LONG).show();
+                                    Toast.makeText(MainActivity.this,"You don't have any task to remove." , Toast.LENGTH_LONG).show();
 
                                 } else if (alToDo.isEmpty() == false) {
                                     int pos = Integer.parseInt(etInput.getText().toString());
 
                                     if (alToDo.size() <= pos) {
-                                        Toast.makeText(MainActivity.this,"Wrong index number" , Toast.LENGTH_LONG).show();
+                                        Toast.makeText(MainActivity.this,"Wrong index number." , Toast.LENGTH_LONG).show();
 
                                     } else if (alToDo.size() >= pos){
                                         alToDo.remove(pos);
